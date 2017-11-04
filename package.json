@@ -1,15 +1,18 @@
 {
-  "name": "student_resources_app",
+  "name": "student_resource_app",
   "version": "1.0.0",
-  "description": "An app to access students's resource",
+  "description": "An app to access students' basic information",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Joshua Ogunbo",
   "license": "ISC"

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Student Resource App </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=1360">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="font/css/font-awesome.css">
+      <script src="js/jquery.js"></script>
+      <script src="js/script.js"></script>
+   </head>
+   <body style="background:rgb(256,256,255)">
+      <div class="overlay"></div>
+      <div class="error-alert"></div>
+      <header>
+         <p class="home-page"><i class="fa fa-users"></i> Students' Resource Portal</p>
+         <p class="right add-student"> <i class="fa fa-plus"></i> Add</p>
+      </header>
+      <div class="header-bottom">
+         <li class="allStudents">All Students</li>
+      </div>
+      <div class="main-content">
+         <div class="addStudent add-student">
+            <i class="fa fa-plus-circle" style="font-size:45px;"></i><br><br>
+            Create Student resource
+         </div>
+      </div>
+      <div class="add-form">
+         <div class="close-form">
+            &times
+         </div>
+         <div class="form-header">
+            Add Student
+         </div>
+         <form id="add-form" class="add-form-cont">
+            <div class="input-field">  
+               <label for="add-name"> Full Name</label>
+               <input id="add-name" type="text" name="name">
+            </div>
+            <div class="input-field">  
+               <label for="add-dob"> Age </label>
+               <input id="add-dob" type="text" name="age">
+            </div>
+            <div class="input-field">  
+               <label for="add-soo"> State of Origin </label>
+               <input id="add-soo" type="text" name="soo">
+            </div>
+            <div class="input-field">  
+               <label for="add-dept"> Department</label>
+               <input id="add-dept" type="text" name="dept">
+            </div>
+            <div class="input-field">  
+               <label for="add-factly"> Faculty</label>
+               <input id="add-factly" type="text" name="factly">
+            </div>
+            <button class="add-submit" type="submit"> Submit </button>
+         </form>
+      </div>
+      <div class="edit-form">
+         <div class="close-form">
+            &times
+         </div>
+         <div class="form-header">
+            Edit Students' information
+         </div>
+         <form id="add-form" class="edit-form-body">
+            <div class="first-part">
+               <div class="input-field">  
+                  <label for="edit-name"> Full Name</label>
+                  <input id="edit-name" name="name" type="text">
+               </div>
+               <div class="input-field">  
+                  <label for="edit-dob"> Age </label>
+                  <input id="edit-dob" name="dob" type="text">
+               </div>
+               <div class="input-field">  
+                  <label for="edit-soo"> State of Origin </label>
+                  <input id="edit-soo" name="soo" type="text">
+               </div>
+               <div class="input-field">  
+                  <label for="edit-dept"> Department</label>
+                  <input id="edit-dept" name="dept" type="text">
+               </div>
+               <div class="input-field">  
+                  <label for="edit-factly"> Faculty</label>
+                  <input id="edit-factly" name="factly" type="text">
+               </div>
+               <div class="input-field" style="display:none">  
+                  <input id="edit-id" name="id" type="hidden">
+               </div>
+               <button class="edit-submit-btn" type="submit"> Update </button>
+            </div>
+         </form>
+      </div>
+      <div class="delete-form">
+         <div class="delete-form-header">
+            <span class="delete-record-name">Delete </span> record
+         </div>
+         <div class="delete-form-content">
+            Are you sure you want to delete this record ?
+         </div>
+         <div class="delete-form-action">
+            <button class="delete-yes">Yes</button> <button class="delete-no">No</button>
+         </div>
+      </div>
+      <div class="view-page">
+         <h3>Students' Information</h3>
+         <div class="close-view-page">
+            &times close &times
+         </div>
+         <p>Name of Student:</p>
+         <p class="input-view view-name"> Joshua Ogunbo</p>
+         <p>Age:</p>
+         <p class="input-view view-age"> 24th January, 1996</p>
+         <p>State of Origin:</p>
+         <p class="input-view view-state"> Ogun State</p>
+         <p>Department:</p>
+         <p class="input-view view-dept"> Mathematics</p>
+         <p>Faculty:</p>
+         <p class="input-view view-factly"> Physical Sciences</p>
+      </div>
+      <div class="student-list">
+      </div>
+      </div>
+      </div>
+   </body>
+</html>
